@@ -50,4 +50,8 @@ py claude_edge_fix.py --fix    # diagnostics + auto-fix
 
 ## Requirements
 
-Python 3.10+, stdlib only (`winreg`, `subprocess`, `pathlib`, `json`)
+Windows only. Python 3.10+, stdlib only (`winreg`, `subprocess`, `pathlib`, `json`)
+
+## License
+
+MIT — Copyright Drew Adkins | Unsung Images

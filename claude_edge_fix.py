@@ -6,7 +6,7 @@ Usage:
     py claude_edge_fix.py            # diagnostics only
     py claude_edge_fix.py --fix      # diagnostics + auto-fix
 
-Log:  C:\Users\jaa15\OneDrive\PYProjects\Logs\claude_edge_fix_YYYYMMDD_HHMMSS.log
+Log:  <home>/claude_edge_fix_logs/claude_edge_fix_YYYYMMDD_HHMMSS.log
 Repo: https://github.com/unsungIMG/ClaudeEdgeFix
 """
 
@@ -18,7 +18,7 @@ import winreg
 from datetime import datetime
 from pathlib import Path
 
-LOG_DIR = Path(r"C:\Users\jaa15\OneDrive\PYProjects\Logs")
+LOG_DIR = Path.home() / "claude_edge_fix_logs"
 DATESTAMP = datetime.now().strftime("%Y%m%d_%H%M%S")
 LOG_PATH = LOG_DIR / f"claude_edge_fix_{DATESTAMP}.log"
 
